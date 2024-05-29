@@ -1,15 +1,45 @@
 .App {
     text-align: center;
-    padding-right: 5%;
-    padding-left: 5%;
+    
   }
 
 .navbar {
+    margin-right: 7%;
+    margin-left: 7%;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    max-width: 100%;
     padding-top: 40px;
-    &_link_span {
-        padding-left: 40px;
+    &_link{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        &_span {
+            padding-left: 20px;
+            font-weight: 500;
+            font-size: 20px;
+        }
+    }
+    
+}
+
+.banner {
+    position: relative;
+    margin-right: 7%;
+    margin-left: 7%;
+    border-radius: 20px;
+    margin-top: 30px;
+    background-size: cover;
+    background-position: center;
+    height: 140px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    max-width: 100%;
+    color: white;
+    h1 { 
+        font-size: 30px;
     }
 }
