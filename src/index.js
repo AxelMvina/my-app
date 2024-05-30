@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './assets/css/index.css';
 import App from './App';
+import Error from './Components/Error';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <App/>,
   },
+  {
+    path: "*",
+    element: <Error/>
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

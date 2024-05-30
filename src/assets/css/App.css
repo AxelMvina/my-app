@@ -37,7 +37,55 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   max-width: 100%;
   color: white;
+  margin-bottom: 40px;
 }
 .banner h1 {
   font-size: 30px;
+}
+
+.grid {
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: 7%;
+  margin-left: 7%;
+  gap: 2%;
+  border-radius: 15px;
+}
+
+.Apartment {
+  position: relative;
+  margin: 3%;
+  width: 25%;
+  height: 340px;
+  border-radius: 10px;
+  background-color: #FF6060;
+}
+.Apartment_p {
+  position: absolute;
+  display: flex;
+  top: 75%;
+  left: 4%;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.Footer {
+  margin-top: 40px;
+  background-color: black;
+}
+.Footer img {
+  padding-top: 70px;
+  width: 122px;
+  height: 39.444px;
+}
+.Footer p {
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  padding-bottom: 20px;
+  padding-top: 15px;
+  margin: 0;
 }/*# sourceMappingURL=App.css.map */
