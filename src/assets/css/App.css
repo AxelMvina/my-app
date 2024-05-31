@@ -1,5 +1,11 @@
+@charset "UTF-8";
 .App {
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
 }
 
 .navbar {
@@ -16,9 +22,19 @@
   flex-direction: row;
 }
 .navbar_link_span {
-  padding-left: 20px;
+  padding-left: 50px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 26px;
+}
+.navbar_link_span a {
+  color: black;
+  text-decoration: none;
+}
+.navbar_link_span a:hover {
+  text-decoration: underline;
+}
+.navbar_link_span .active {
+  text-decoration: underline;
 }
 
 .banner {
@@ -29,7 +45,7 @@
   margin-top: 30px;
   background-size: cover;
   background-position: center;
-  height: 140px;
+  height: 223px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,7 +56,7 @@
   margin-bottom: 40px;
 }
 .banner h1 {
-  font-size: 30px;
+  font-size: 60px;
 }
 
 .grid {
@@ -58,7 +74,7 @@
   position: relative;
   margin: 3%;
   width: 25%;
-  height: 340px;
+  height: 360px;
   border-radius: 10px;
   background-color: #FF6060;
 }
@@ -67,7 +83,7 @@
   display: flex;
   top: 75%;
   left: 4%;
-  color: #FFF;
+  color: white;
   font-size: 18px;
   font-weight: 700;
 }
@@ -79,13 +95,87 @@
 .Footer img {
   padding-top: 70px;
   width: 122px;
-  height: 39.444px;
+  height: 39px;
+  filter: brightness(3);
 }
 .Footer p {
   color: white;
-  font-size: 18px;
-  font-weight: 300;
-  padding-bottom: 20px;
-  padding-top: 15px;
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 25px;
+  padding-top: 20px;
   margin: 0;
+}
+
+.ErrorPage {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.ErrorPage h1 {
+  margin-top: 6rem;
+  color: #FF6060;
+  font-size: 288px;
+}
+.ErrorPage_p {
+  color: #FF6060;
+  font-size: 40px;
+  margin-top: -2em;
+  margin-bottom: 5em;
+}
+.ErrorPage_a {
+  color: black;
+  font-size: 18px;
+}
+.ErrorPage .Footer {
+  margin-top: 10em;
+}
+
+.AboutPage {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.AboutPage .Footer {
+  margin-top: 6em;
+}
+
+.collapse {
+  margin-right: 7%;
+  margin-left: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.collapse_content {
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: left;
+  max-height: 0;
+  overflow: hidden;
+  max-width: 80%;
+  font-size: 20px;
+  transition: max-height 0.5s ease-in-out;
+}
+.collapse_content.open {
+  max-height: 500px;
+}
+.collapse_button {
+  background-color: #FF6060;
+  padding: 20px;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  border-radius: 10px;
+  margin-top: 2em;
+  color: white;
+  width: 80%;
+}
+.collapse .arrow {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.collapse .arrow.open {
+  transform: rotate(-180deg); /* Pivote la flèche */
 }/*# sourceMappingURL=App.css.map */
