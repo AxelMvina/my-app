@@ -2,16 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import Error from './Components/ErrorPage';
+import LocationPage from './Components/LocationPage';
 import AboutPage from './Components/AboutPage';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+  },
+  {
+    path: "/Location",
+    element: <LocationPage/>,
   },
   {
     path: "/About",
