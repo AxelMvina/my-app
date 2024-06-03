@@ -199,13 +199,25 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.LocationPage_title {
+.LocationPage_container {
+  display: flex;
   margin-right: 7%;
   margin-left: 7%;
+}
+.LocationPage_title {
+  width: 50%;
   text-align: left;
 }
 .LocationPage_title h2 {
   color: #FF6060;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.LocationPage_title h3 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 10px;
 }
 .LocationPage_title_tag {
   display: flex;
@@ -218,14 +230,53 @@ body {
   width: 10%;
   text-align: center;
   border-radius: 10px;
+  font-size: 16px;
+  display: grid;
+  align-items: center;
+}
+.LocationPage_owner {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.LocationPage_owner_content {
+  display: flex;
+  align-items: center;
+}
+.LocationPage_owner_content h4 {
+  color: #FF6060;
+  font-size: 20px;
+  text-align: right;
+  padding-right: 20px;
+  font-weight: 500;
+}
+.LocationPage_owner_content_badge {
+  width: 60px;
+  height: 60px;
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+  background-color: lightgray;
+}
+.LocationPage_owner_stars span {
+  font-size: 35px;
 }
 .LocationPage_desccollapse {
   margin-right: 7%;
   margin-left: 7%;
   display: flex;
+  gap: 50px;
 }
 .LocationPage .collapse {
   margin-right: 0;
   margin-left: 0;
-  width: 100%;
+  width: 50%;
+}
+.LocationPage .collapse_button {
+  width: 94%;
+}
+.LocationPage .collapse_content {
+  max-width: 100%;
+  overflow-wrap: normal;
 }/*# sourceMappingURL=App.css.map */
