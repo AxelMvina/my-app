@@ -294,7 +294,8 @@ body {
   background-color: lightgray;
 }
 .LocationPage_owner_stars span {
-  font-size: 35px;
+  font-size: 40px;
+  color: #FF6060;
 }
 .LocationPage_desccollapse {
   margin-right: 7%;

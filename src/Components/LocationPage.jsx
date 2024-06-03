@@ -26,6 +26,15 @@ function LocationPage() {
         setCurrentIndex(currentIndex === pictures.length - 1 ? 0 : currentIndex + 1);
     };
 
+    const renderStars = (rating) => {
+        const totalStars = 5;
+        return Array.from({ length: totalStars }, (_, index) => (
+            <span key={index} className="star">
+                {index < rating ? "★" : "☆"}
+            </span>
+        ));
+    };
+
   return (
     <div className='LocationPage'>
         <Navbar/>
@@ -57,11 +66,7 @@ function LocationPage() {
                     <img className='LocationPage_owner_content_badge'src={Logement.host.picture}></img>
                 </div>
                 <div className='LocationPage_owner_stars'>
-                    <span>☆</span>
-                    <span>☆</span>
-                    <span>☆</span>
-                    <span>☆</span>
-                    <span>☆</span>
+                    {renderStars(Logement.rating)}
                 </div>
             </div>
         </div>
