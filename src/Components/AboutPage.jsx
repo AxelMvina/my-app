@@ -1,14 +1,15 @@
 import React from 'react'
 import Navbar from './Navbar.jsx';
-import Banner from './Banner.jsx';
+import BannerAboutPage from './BannerAboutPage.jsx';
 import DescCollapseAbout from './DescCollapseAbout.jsx';
 import Footer from './Footer.jsx';
+import logo2 from "../assets/Images/IMG2.png"
 
 function AboutPage() {
   return (
     <div className='AboutPage'>
         <Navbar/>
-        <Banner />
+        <BannerAboutPage/>
         <DescCollapseAbout title="Fiabilité">
           <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
         </DescCollapseAbout>

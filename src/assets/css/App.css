@@ -182,6 +182,7 @@ body {
   margin-top: 2em;
   color: white;
   width: 80%;
+  font-weight: 700;
 }
 .collapse .arrow {
   cursor: pointer;
