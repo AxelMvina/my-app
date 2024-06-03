@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     element: <App/>,
   },
   {
-    path: "/Location",
+    path: "/Location/:id",
     element: <LocationPage/>,
   },
   {
