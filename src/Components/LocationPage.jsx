@@ -40,7 +40,7 @@ function LocationPage() {
                 <p>Phasellus porttitor metus ornare justo vehicula cursus. Donec eu sem placerat, accumsan est nec, convallis lorem. Morbi tempus sed nunc eu ultrices. Duis vitae interdum felis. Nulla tincidunt at orci ut tempus. Nulla ultricies augue non velit consectetur, in auctor orci sollicitudin. Nunc hendrerit nulla in elit aliquam interdum. Curabitur massa metus, euismod quis pharetra ac, commodo vel orci. Cras quis magna tempor, suscipit sapien sed, ullamcorper lorem.</p>
             </DescCollapseAbout>
             <DescCollapseAbout title="Equipements">
-                <p></p>
+                <p>Phasellus porttitor metus ornare justo vehicula cursus. Donec eu sem placerat, accumsan est nec, convallis lorem. Morbi tempus sed nunc eu ultrices. Duis vitae interdum felis. Nulla tincidunt at orci ut tempus. Nulla ultricies augue non velit consectetur, in auctor orci sollicitudin. Nunc hendrerit nulla in elit aliquam interdum. Curabitur massa metus, euismod quis pharetra ac, commodo vel orci. Cras quis magna tempor, suscipit sapien sed, ullamcorper lorem.</p>
             </DescCollapseAbout>
         </div>
         <Footer/>
