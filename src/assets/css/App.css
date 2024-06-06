@@ -338,4 +338,67 @@ body {
     margin: 0;
     margin-bottom: 15px;
   }
+  .navbar_logo img {
+    width: 145px;
+    height: 46.881px;
+  }
+  .navbar_link_span {
+    padding-left: 20px;
+    font-size: 20px;
+  }
+  .banner {
+    height: 111px;
+  }
+  .banner h1 {
+    font-size: 30px;
+    text-align: left;
+    padding-left: 10px;
+  }
+  .Footer p {
+    font-size: 15px;
+  }
+  .AboutPage .banner {
+    margin-bottom: 0;
+  }
+  .AboutPage .collapse_button {
+    width: 90%;
+  }
+  .ErrorPage h1 {
+    font-size: 160px;
+  }
+  .ErrorPage p {
+    font-size: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .LocationPage_carrousel img {
+    height: 440px;
+  }
+  .LocationPage_carrousel button {
+    font-size: 50px;
+    top: 40%;
+  }
+  .LocationPage_container {
+    flex-direction: column;
+  }
+  .LocationPage_title {
+    width: 100%;
+  }
+  .LocationPage_title_tag p {
+    padding: 10px;
+    font-weight: 700;
+  }
+  .LocationPage_owner {
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .LocationPage_desccollapse {
+    gap: 0;
+    flex-direction: column;
+  }
+  .LocationPage_desccollapse .collapse {
+    width: 100%;
+  }
 }/*# sourceMappingURL=App.css.map */
