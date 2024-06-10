@@ -52,9 +52,9 @@ function LocationPage() {
                 <h2>{Logement.title}</h2>
                 <h3>{Logement.location}</h3>
                 <div className='LocationPage_title_tag'>
-                    {tags.map((tag) => {
+                    {tags.map((tag, index) => {
                         return (
-                            <p>{tag}</p>
+                            <p key={index}>{tag}</p>
                         );
                         })
                     }
@@ -63,7 +63,7 @@ function LocationPage() {
             <div className='LocationPage_owner'>
                 <div className='LocationPage_owner_content'>
                     <h4>{Logement.host.name}</h4>
-                    <img className='LocationPage_owner_content_badge'src={Logement.host.picture}></img>
+                    <img className='LocationPage_owner_content_badge'src={Logement.host.picture} alt='Photo du propriétaire'></img>
                 </div>
                 <div className='LocationPage_owner_stars'>
                     {renderStars(Logement.rating)}
@@ -75,8 +75,8 @@ function LocationPage() {
                 <p>{Logement.description}.</p>
             </DescCollapseAbout>
             <DescCollapseAbout title="Equipements" >
-            {equipments.map((equipment)=>{
-                return <li className="collapse_content_eguipments">{equipment}</li>
+            {equipments.map((equipment, index)=>{
+                return <li key={index} className="collapse_content_eguipments">{equipment}</li>
             })
             }
                 

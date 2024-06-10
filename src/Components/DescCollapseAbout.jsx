@@ -11,7 +11,7 @@ const DescCollapseAbout = ({ title, children }) => {
     <div className="collapse">
       <div className="collapse_button">
         {title}
-        <span onClick={toggleCollapse} className={`arrow ${isOpen ? 'open' : ''}`}><i class="fa-solid fa-chevron-up fa-lg"></i></span>
+        <span onClick={toggleCollapse} className={`arrow ${isOpen ? 'open' : ''}`}><i className="fa-solid fa-chevron-up fa-lg"></i></span>
       </div>
       <div className={`collapse_content ${isOpen ? 'open' : ''}`}>
         {children}
