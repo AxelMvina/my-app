@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const DescCollapseAbout = ({ title, children }) => {
+const DescCollapseAbout = ({ title, text }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -14,7 +14,7 @@ const DescCollapseAbout = ({ title, children }) => {
         <span onClick={toggleCollapse} className={`arrow ${isOpen ? 'open' : ''}`}><i className="fa-solid fa-chevron-up fa-lg"></i></span>
       </div>
       <div className={`collapse_content ${isOpen ? 'open' : ''}`}>
-        {children}
+        {text}
       </div>
     </div>
   );

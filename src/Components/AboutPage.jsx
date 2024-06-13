@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from './Navbar.jsx';
+import Navbar from './Navbar/Navbar.jsx';
 import BannerAboutPage from './BannerAboutPage.jsx';
 import DescCollapseAbout from './DescCollapseAbout.jsx';
 import Footer from './Footer.jsx';
-import logo2 from "../assets/Images/IMG2.png"
+
 
 function AboutPage() {
   return (

@@ -1,10 +1,10 @@
 import React from "react";
-import background from "../assets/Images/IMG1.png";
 
-function Banner() {
+
+function Banner({image, title}) {
     return (
-        <div className="banner" style={{ backgroundImage: `url(${background})` }}>
-            <h1>Chez vous, partout et ailleurs</h1>
+        <div className="banner" style={{ backgroundImage: `url(${image})` }}>
+            <h1>{title}</h1>
         </div>
     )
     

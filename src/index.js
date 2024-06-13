@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import Error from './Components/ErrorPage';
-import LocationPage from './Components/LocationPage';
-import AboutPage from './Components/AboutPage';
+import Home from './pages/Home/Home';
+import Error from './components/ErrorPage';
+import LocationPage from './components/LocationPage';
+import AboutPage from './components/AboutPage';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -13,7 +13,7 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <Home/>,
   },
   {
     path: "/Location/:id",

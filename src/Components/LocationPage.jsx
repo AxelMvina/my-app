@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { useParams } from 'react-router-dom';
-import Navbar from './Navbar';
+import Navbar from './Navbar/Navbar';
 import DescCollapseAbout from './DescCollapseAbout';
 import Footer from './Footer';
 import Logements from "../assets/logements/Logements.json";
@@ -71,16 +71,18 @@ function LocationPage() {
             </div>
         </div>
         <div className='LocationPage_desccollapse'>
-            <DescCollapseAbout title="Description">
-                <p>{Logement.description}.</p>
-            </DescCollapseAbout>
-            <DescCollapseAbout title="Equipements" >
-            {equipments.map((equipment, index)=>{
-                return <li key={index} className="collapse_content_eguipments">{equipment}</li>
+            <DescCollapseAbout title="Description" text={Logement.description} />
+            
+
+
+            <DescCollapseAbout title="Equipements" 
+        
+            text={equipments.map((equipment, index)=>{
+                return <p key={index} className="collapse_content_eguipments">{equipment}</p>
             })
             }
                 
-            </DescCollapseAbout>
+            />
         </div>
         <Footer/>
     </div>
