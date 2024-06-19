@@ -18,10 +18,10 @@ function LocationPage() {
 
     // État pour gérer l'index de l'image courante dans le carrousel
     const [currentIndex, setCurrentIndex] = useState(0);
-    
+
     // Vérifie si le logement n'est pas trouvé, redirige vers la page d'erreur
     if (!logement) {
-        return <Navigate to="/Error404" />;
+        return <Navigate to="/ErrorPage" />;
     }
 
     // Destructuration des propriétés nécessaires depuis l'objet logement

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from './pages/Home/Home';
-import Error from './pages/ErrorPage/ErrorPage';
+import ErrorPage from './pages/ErrorPage/ErrorPage';
 import LocationPage from './pages/LocationPage/LocationPage';
 import AboutPage from './pages/AboutPage/AboutPage';
 import {
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <Error/>,
+    element: <ErrorPage/>,
   }
 ]);
 
