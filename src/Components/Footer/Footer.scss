@@ -1,0 +1,28 @@
+@import '../../assets/abstract/_variable.scss';
+
+
+.Footer {
+    margin-top: 40px;
+    background-color: $secondary-color;
+    img {
+        padding-top: 70px;
+        width: 122px;
+        height: 39px;
+        filter: brightness(3);
+    }
+    p {
+        color: $tertiary-color;
+        font-size: 24px;
+        font-weight: 500;
+        padding-bottom: 25px;
+        padding-top: 20px;
+        margin: 0;
+    }
+}
+
+// media query mobile
+@media (max-width: 767px){
+    
+    .Footer p {
+        font-size: 15px;
+    }}

@@ -1,0 +1,39 @@
+@import '../../assets/abstract/_mixin.scss';
+@import '../../assets/abstract/_variable.scss';
+
+// Page d'erreur
+.ErrorPage {
+    @include Fontfamily-Center;
+    h1 {
+        margin-top: 6rem;
+        color: $primary-color;
+        font-size: 288px;
+    }
+    &_p {
+        color: $primary-color;
+        font-size: 40px;
+        margin-top: -2em;
+        margin-bottom: 5em;
+    }
+    &_a {
+        color: $secondary-color;
+        font-size: 18px;
+    }
+    .Footer {
+        margin-top: 10em;
+    }
+}
+
+// media query mobile
+@media (max-width: 767px){
+    .ErrorPage {
+        h1 {
+            font-size: 160px;
+        }
+        p {
+            font-size: 30px;
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+    }
+}

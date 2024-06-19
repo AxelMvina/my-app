@@ -1,6 +1,6 @@
 
-@import '../../Scss/mixin.scss';
-@import '../../Scss/Variable.scss';
+@import '../../assets/abstract/_mixin.scss';
+@import '../../assets/abstract/_variable.scss';
 
 .navbar {
     @include MarginLeftAndRight;
@@ -31,3 +31,20 @@
     }
     
 }
+
+@media (max-width: 767px){
+    
+    .navbar {
+        &_logo {
+            img {
+                width: 145px;
+                height: 46.881px;
+            }
+        }
+        &_link {
+            &_span {
+                padding-left: 20px;
+                font-size: 20px;
+            }
+        }
+    }}

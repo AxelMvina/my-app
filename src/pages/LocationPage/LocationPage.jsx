@@ -1,9 +1,10 @@
 import React, {useState} from 'react'
 import { useParams } from 'react-router-dom';
-import Navbar from './Navbar/Navbar';
-import DescCollapseAbout from './DescCollapseAbout';
-import Footer from './Footer';
-import Logements from "../assets/logements/Logements.json";
+import Navbar from '../../Components/Navbar/Navbar';
+import DescCollapseAbout from '../../Components/DescCollapseAbout';
+import Footer from '../../Components/Footer/Footer';
+import Logements from "../../assets/Data/Data.json";
+import './LocationPage.scss'
 
 const findLocationID =(id) =>{
     return Logements.find((Logement) => Logement.id === id);

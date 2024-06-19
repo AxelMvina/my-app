@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from './pages/Home/Home';
-import Error from './components/ErrorPage';
-import LocationPage from './components/LocationPage';
-import AboutPage from './components/AboutPage';
+import Error from './pages/ErrorPage/ErrorPage';
+import LocationPage from './pages/LocationPage/LocationPage';
+import AboutPage from './pages/AboutPage/AboutPage';
 import {
   createBrowserRouter,
   RouterProvider,

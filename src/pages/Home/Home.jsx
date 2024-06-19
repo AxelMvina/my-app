@@ -1,18 +1,22 @@
 import React from "react";
 
-import Navbar from "../../components/Navbar/Navbar.jsx";
-import Banner from "../../components/Banner.jsx";
-import LocationGrid from "../../components/LocationGrid.jsx";
-import Footer from "../../components/Footer.jsx";
+import Navbar from "../../Components/Navbar/Navbar.jsx";
+import Banner from "../../Components/Banner/Banner.jsx";
+
+import Footer from "../../Components/Footer/Footer.jsx";
 import './Home.scss';
-import background from "../../assets/Images/bannerHome.png";
+import background from "../../assets/Images/BannerHomePage.png";
+import Apartment from "../../Components/Apartment/Apartment.jsx";
+import Logements from "../../assets/Data/Data.json";
 
 function Home() {
   return (
     <div className="App">
       <Navbar/>
       <Banner image={background} title="Chez vous, partout et ailleurs" />
-      <LocationGrid/>
+      <div className="grid">
+            <Apartment Logements={Logements}/>
+      </div>
       <Footer/>
     </div>
   );

@@ -1,0 +1,66 @@
+@import '../../assets/abstract/_mixin.scss';
+@import '../../assets/abstract/_variable.scss';
+
+
+
+// Page A propos
+.AboutPage {
+    @include Fontfamily-Center; 
+    .Footer {
+        margin-top: 6em;
+    }
+}
+.collapse{
+    @include MarginLeftAndRight;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_content {
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: left;
+        max-height: 0;
+        overflow: hidden;
+        max-width: 80%;
+        font-size: 20px;
+        transition: max-height 0.5s ease-in-out;
+        &.open {
+            max-height: 500px;
+        }
+    }
+    &_button {
+        background-color: $primary-color;
+        padding: 20px;
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 25px;
+        border-radius: 10px;
+        margin-top: 2em;
+        color: $tertiary-color;
+        width: 80%;
+        font-weight: 700;
+}  
+    .arrow {
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+    
+    .arrow.open {
+        transform: rotate(-180deg); /* Pivote la flèche */
+    }
+}
+
+// media query mobile
+@media (max-width: 767px){
+
+    .AboutPage{
+        .banner {
+            margin-bottom: 0;
+        }
+        .collapse_button {
+            width: 90%;
+        }
+    }}

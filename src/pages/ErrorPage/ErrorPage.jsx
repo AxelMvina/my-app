@@ -1,7 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import Navbar from "./Navbar/Navbar.jsx";
-import Footer from "./Footer.jsx";
+import Navbar from "../../Components/Navbar/Navbar.jsx";
+import Footer from "../../Components/Footer/Footer.jsx";
+import "./ErrorPage.scss"
 
 function Error() {
     return (

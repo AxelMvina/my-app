@@ -1,0 +1,35 @@
+@import '../../assets/abstract/_mixin.scss';
+@import '../../assets/abstract/_variable.scss';
+
+
+.banner {
+    position: relative;
+    @include MarginLeftAndRight;
+    border-radius: 20px;
+    margin-top: 30px;
+    background-size: cover;
+    background-position: center;
+    height: 223px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    max-width: 100%;
+    color: $tertiary-color;
+    margin-bottom: 40px;
+    h1 { 
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 767px){
+    .banner {
+        height: 111px;
+        h1 {
+            font-size: 30px;
+            text-align: left;
+            padding-left: 10px;
+            
+        }
+    }}
