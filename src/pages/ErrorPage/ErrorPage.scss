@@ -19,9 +19,6 @@
         color: $secondary-color;
         font-size: 18px;
     }
-    .Footer {
-        margin-top: 10em;
-    }
 }
 
 // media query mobile
@@ -30,7 +27,7 @@
         h1 {
             font-size: 160px;
         }
-        p {
+        &_p {
             font-size: 30px;
             padding-left: 70px;
             padding-right: 70px;

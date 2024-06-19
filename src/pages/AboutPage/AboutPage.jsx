@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../../Components/Navbar/Navbar.jsx';
 import BannerAboutPage from '../../Components/Banner/BannerAboutPage.jsx';
-import DescCollapseAbout from '../../Components/DescCollapseAbout.jsx';
+import DescCollapseAbout from '../../Components/Collapse/DescCollapseAbout.jsx';
 import Footer from '../../Components/Footer/Footer.jsx';
 import './AboutPage.scss'
 

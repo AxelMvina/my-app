@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import './Collapse.scss'
+
 
 const DescCollapseAbout = ({ title, text }) => {
   const [isOpen, setIsOpen] = useState(false);

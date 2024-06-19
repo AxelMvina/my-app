@@ -111,35 +111,6 @@
             
         }
     }
-    &_desccollapse {
-        @include MarginLeftAndRight;
-        display: flex;
-        gap: 50px;
-    }
-    .collapse {
-        margin-right:0 ;
-        margin-left: 0;
-        width: 50%;
-        &_button {
-            width: 94%;
-        }
-        &_content {
-            background-color: #d3d3d359;
-            width: 94%;
-            max-width: 100%;
-            border-radius: 10px;
-            overflow-wrap: normal;
-            &.open {
-                padding: 20px;
-            }
-            p {
-                padding: 20px;
-                display: flex;
-                flex-direction: column;
-                list-style-type: none;
-            }
-        }
-    }
 }
 
 // media query mobile
@@ -169,13 +140,6 @@
             flex-direction: row-reverse;
             justify-content: space-between;
             align-items: center;
-        }
-        &_desccollapse {
-            gap: 0;
-            flex-direction: column;
-            .collapse{
-                width: 100%;
-            }
         }
     }
 }

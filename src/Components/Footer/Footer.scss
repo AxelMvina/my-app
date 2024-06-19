@@ -20,6 +20,20 @@
     }
 }
 
+.AboutPage { 
+    .Footer {
+        margin-top: 6em;
+    }
+}
+
+
+// Page d'erreur
+.ErrorPage {
+    .Footer {
+        margin-top: 10em;
+    }
+}
+
 // media query mobile
 @media (max-width: 767px){
     

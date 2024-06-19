@@ -1,0 +1,91 @@
+@import '../../assets/abstract/_mixin.scss';
+@import '../../assets/abstract/_variable.scss';
+
+
+.collapse{
+    @include MarginLeftAndRight;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_content {
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: left;
+        max-height: 0;
+        overflow: hidden;
+        max-width: 80%;
+        font-size: 20px;
+        transition: max-height 0.5s ease-in-out;
+        &.open {
+            max-height: 500px;
+        }
+    }
+    &_button {
+        background-color: $primary-color;
+        padding: 20px;
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 25px;
+        border-radius: 10px;
+        margin-top: 2em;
+        color: $tertiary-color;
+        width: 80%;
+        font-weight: 700;
+}  
+    .arrow {
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+    
+    .arrow.open {
+        transform: rotate(-180deg); /* Pivote la flèche */
+    }
+}
+
+.LocationPage {
+
+    &_desccollapse {
+        @include MarginLeftAndRight;
+        display: flex;
+        gap: 50px;
+    }
+    .collapse {
+        margin-right:0 ;
+        margin-left: 0;
+        width: 50%;
+        &_button {
+            width: 94%;
+        }
+        &_content {
+            background-color: #d3d3d359;
+            width: 94%;
+            max-width: 100%;
+            border-radius: 10px;
+            overflow-wrap: normal;
+            &.open {
+                padding: 20px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 767px){
+    .LocationPage {
+        &_desccollapse {
+            gap: 0;
+            flex-direction: column;
+            .collapse{
+                width: 100%;
+            }
+        }
+    }
+    .AboutPage{
+        .collapse_button {
+            width: 90%;
+        }
+    }
+}
