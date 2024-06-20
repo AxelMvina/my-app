@@ -10,7 +10,8 @@ function Apartment({ Logements }) {
                 <div className="Apartment" key={Logement.id}>
                     <Link to={`/Location/${Logement.id}`}>
                         <img src={Logement.cover} alt={Logement.title}/>
-                        <h2 className="Apartment_p">{Logement.title}</h2>
+                        <div><h2 className="Apartment_p">{Logement.title}</h2></div>
+                        
                     </Link>
                 </div>
             ))}
