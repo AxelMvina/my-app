@@ -1,0 +1,26 @@
+@import '../../assets/abstract/_variable.scss';
+
+
+
+.Tags {
+    display: flex;
+    gap: 15px;
+    
+    p {
+    padding: 8px;
+    background-color: $primary-color;
+    color: $tertiary-color;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    display: grid;
+    align-items: center;
+    font-weight: 700;
+}
+}
+
+@media (max-width: 767px){
+    .Tags p {
+        padding: 10px;
+    }
+}
