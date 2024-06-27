@@ -8,6 +8,7 @@ import Gallery from '../../Components/Gallery/Gallery.jsx'
 import Rating from '../../Components/Rating/Rating';
 import Tag from '../../Components/Tag/Tag';
 import OwnerContent from '../../Components/OwnerContent/OwnerContent';
+import logo from '../../assets/Images/Logo.png';
 import './LocationPage.scss';
 
 // Fonction pour trouver un logement par son ID
@@ -59,7 +60,9 @@ function LocationPage() {
                 />
             </div>
 
-            <Footer />
+            <Footer title="© 2020 Kasa. All 
+               rights reserved" 
+               logo={logo}/>
         </div>
     );
 }

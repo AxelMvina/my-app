@@ -12,14 +12,26 @@ const Gallery = ({ pictures }) => {
         setCurrentIndex(currentIndex === pictures.length - 1 ? 0 : currentIndex + 1);
     };
 
+    
+
     return (
+
         <div className='Carrousel'>
-            <button onClick={prevSlide} className='Carrousel_buttonPrev'>❮</button>
+             { pictures.length > 1 &&
+                <button onClick={prevSlide} className='Carrousel_buttonPrev'>❮</button>
+
+             }
             <img src={pictures[currentIndex]} alt={`photo logement ${currentIndex + 1}`} />
-            <div className='Carrousel_index'>
-                {currentIndex + 1} / {pictures.length}
-            </div>
-            <button onClick={nextSlide} className='Carrousel_buttonNext'>❯</button>
+           
+            { pictures.length > 1 &&
+               <div>
+                 <div className='Carrousel_index'>
+                     {currentIndex + 1} / {pictures.length}
+                 </div>
+                 <button onClick={nextSlide} className='Carrousel_buttonNext'>❯</button>
+                </div>
+             }
+           
         </div>
     );
 };
