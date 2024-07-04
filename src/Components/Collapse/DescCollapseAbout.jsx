@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import './Collapse.scss'
-
+import './Collapse.scss';
 
 const DescCollapseAbout = ({ title, text }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,9 +10,11 @@ const DescCollapseAbout = ({ title, text }) => {
 
   return (
     <div className="collapse">
-      <div className="collapse_button">
+      <div className="collapse_button" onClick={toggleCollapse}>
         {title}
-        <span onClick={toggleCollapse} className={`arrow ${isOpen ? 'open' : ''}`}><i className="fa-solid fa-chevron-up fa-lg"></i></span>
+        <span className={`arrow ${isOpen ? 'open' : ''}`}>
+          <i className="fa-solid fa-chevron-up fa-lg"></i>
+        </span>
       </div>
       <div className={`collapse_content ${isOpen ? 'open' : ''}`}>
         <p>{text}</p>
