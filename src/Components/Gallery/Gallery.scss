@@ -5,7 +5,6 @@
 .Carrousel {
     position: relative;
     margin-top: 50px;
-    @include MarginLeftAndRight;
     img {
         border-radius: 25px;
         width: 100%;
@@ -39,12 +38,16 @@
 
 @media (max-width: 767px){
     .Carrousel{
+        @include MarginLeftAndRight;
         img {
             height: 440px;
         }
         button {
             font-size: 50px;
             top: 40%;
+        }
+        &_index {
+            display: none;
         }
     }
 }

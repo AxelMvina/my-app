@@ -4,7 +4,6 @@
 
 .banner {
     position: relative;
-    @include MarginLeftAndRight;
     border-radius: 20px;
     margin-top: 30px;
     background-size: cover;
@@ -18,13 +17,20 @@
     max-width: 100%;
     color: $tertiary-color;
     margin-bottom: 40px;
+    max-width: 1240px;
     h1 { 
         font-size: 40px;
+    }
+}
+.AboutPage{
+    .banner{
+        width: 100%;
     }
 }
 
 @media (max-width: 767px){
     .banner {
+        @include MarginLeftAndRight;
         height: 111px;
         h1 {
             font-size: 30px;

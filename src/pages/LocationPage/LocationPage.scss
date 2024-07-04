@@ -11,7 +11,7 @@
 
     &_container{
         display: flex;
-        @include MarginLeftAndRight;
+        max-width: 1240px;
     }
     &_title {
         width: 50%;
@@ -43,6 +43,7 @@
     .LocationPage {
         &_container {
             flex-direction: column;
+            @include MarginLeftAndRight;
         }
         &_title {
             width: 100%; 

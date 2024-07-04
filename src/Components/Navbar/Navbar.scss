@@ -3,11 +3,12 @@
 @import '../../assets/abstract/_variable.scss';
 
 .navbar {
-    @include MarginLeftAndRight;
     display: flex;
     justify-content: space-between;
     max-width: 100%;
+    max-width: 1240px;
     padding-top: 40px;
+    width: 100%;
     &_link{
         display: flex;
         align-items: center;
@@ -32,9 +33,13 @@
     
 }
 
+
+
 @media (max-width: 767px){
     
     .navbar {
+        width: unset;
+        @include MarginLeftAndRight;
         &_logo {
             img {
                 width: 145px;
@@ -47,4 +52,11 @@
                 font-size: 20px;
             }
         }
-    }}
+    }
+    .AboutPage{
+        .navbar{
+            width: 100%;
+        }
+        
+    }
+}

@@ -12,10 +12,12 @@ import logo from '../../assets/Images/Logo.png';
 function Home() {
   return (
     <div className="App">
-      <Navbar/>
-      <Banner image={background} title="Chez vous, partout et ailleurs" />
-      <div className="grid">
-            <Apartment Logements={Logements}/>
+      <div className="App_main">
+        <Navbar/>
+        <Banner image={background} title="Chez vous, partout et ailleurs" />
+        <div className="grid">
+              <Apartment Logements={Logements}/>
+        </div>
       </div>
       <Footer title="© 2020 Kasa. All 
                rights reserved" 

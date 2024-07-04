@@ -3,6 +3,10 @@
 
 .App {
     @include Fontfamily-Center;
+    &_main {
+        display: grid;
+        justify-content: center;
+    }
   }
 
 body {
@@ -12,15 +16,15 @@ body {
 
 .grid {
     background-color: #F6F6F6;
-    @include MarginLeftAndRight;
-    gap: 2%;
     border-radius: 15px;
+    max-width: 1240px;
 }
 
 
 // media query mobile
 @media (max-width: 767px){
     .grid {
+        @include MarginLeftAndRight;
         background-color: white;
     }
 }

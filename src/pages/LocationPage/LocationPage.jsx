@@ -30,36 +30,37 @@ function LocationPage() {
 
     return (
         <div className='LocationPage'>
-            <Navbar />
+            <div className="App_main">
+                <Navbar />
 
-            <Gallery pictures={pictures}/>
+                <Gallery pictures={pictures}/>
 
-            <div className='LocationPage_container'>
-                <div className='LocationPage_title'>
-                    <h2>{title}</h2>
-                    <h3>{location}</h3>
-                    <Tag tags={tags} />
-                </div>
+                <div className='LocationPage_container'>
+                    <div className='LocationPage_title'>
+                        <h2>{title}</h2>
+                        <h3>{location}</h3>
+                        <Tag tags={tags} />
+                    </div>
 
-                <div className='LocationPage_owner'>
-                    <OwnerContent host={host} /> 
-                    <div className='LocationPage_owner_stars'>
-                        <Rating rating={rating} />
+                    <div className='LocationPage_owner'>
+                        <OwnerContent host={host} /> 
+                        <div className='LocationPage_owner_stars'>
+                            <Rating rating={rating} />
+                        </div>
                     </div>
                 </div>
+
+                <div className='LocationPage_desccollapse'>
+                    <DescCollapseAbout title="Description" text={description} />
+
+                    <DescCollapseAbout
+                        title="Équipements"
+                        text={equipments.map((equipment, index) => (
+                            <p key={index} className="collapse_content_eguipments">{equipment}</p>
+                        ))}
+                    />
+                </div>
             </div>
-
-            <div className='LocationPage_desccollapse'>
-                <DescCollapseAbout title="Description" text={description} />
-
-                <DescCollapseAbout
-                    title="Équipements"
-                    text={equipments.map((equipment, index) => (
-                        <p key={index} className="collapse_content_eguipments">{equipment}</p>
-                    ))}
-                />
-            </div>
-
             <Footer title="© 2020 Kasa. All 
                rights reserved" 
                logo={logo}/>

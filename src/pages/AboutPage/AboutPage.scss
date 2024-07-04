@@ -6,6 +6,11 @@
 // Page A propos
 .AboutPage {
     @include Fontfamily-Center; 
+    .App_main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 
@@ -13,7 +18,12 @@
 @media (max-width: 767px){
 
     .AboutPage{
+        .App_main {
+            @include MarginLeftAndRight;
+        }
+
         .banner {
+            
             margin-bottom: 0;
         }
     }}

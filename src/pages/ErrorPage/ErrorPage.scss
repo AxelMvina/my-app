@@ -2,12 +2,10 @@
 @import '../../assets/abstract/_variable.scss';
 
 
-* {
-    @include Fontfamily-Center;
-}
+
 // Page d'erreur
 .ErrorPage {
-   
+    @include Fontfamily-Center;
     h1 {
         margin-top: 6rem;
         color: $primary-color;
@@ -19,6 +17,7 @@
         font-size: 40px;
         margin-top: -2em;
         margin-bottom: 5em;
+        padding: 20px;
     }
     &_a {
         color: $secondary-color;
