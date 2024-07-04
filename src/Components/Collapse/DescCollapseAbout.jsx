@@ -16,7 +16,7 @@ const DescCollapseAbout = ({ title, text }) => {
         <span onClick={toggleCollapse} className={`arrow ${isOpen ? 'open' : ''}`}><i className="fa-solid fa-chevron-up fa-lg"></i></span>
       </div>
       <div className={`collapse_content ${isOpen ? 'open' : ''}`}>
-        {text}
+        <p>{text}</p>
       </div>
     </div>
   );
